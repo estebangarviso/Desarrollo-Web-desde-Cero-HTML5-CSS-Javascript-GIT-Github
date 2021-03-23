@@ -1,0 +1,42 @@
+body{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+h1,h2{
+    font-family: 'Oswald', sans-serif;
+}
+#isotipo.iso-loading {
+    width: 50px;
+    height: 50px;
+}
+#header .col-header .desktop_logo{
+    padding: 1.5rem;
+    background-color: #000;
+    display: flex;
+    text-align: center;
+}
+#main .module h3{
+    vertical-align: center;
+}
+#main .col-soft-green {
+    height: 250px;
+    background: #50e3c1;
+}
+#main .col-soft-black {
+    height: 250px;
+    background: #4a4a4a;
+    border-radius: 15px;
+    text-align: center;
+}
+#main .col-soft-blue {
+    height: 250px;
+    background: #3fa7f4;
+    border-radius: 15px;
+    text-align: center;
+}
+#main .col-soft-grey {
+    height: 250px;
+    background: #cfbdf7;
+    border-radius: 15px;
+    text-align: center;
+}
