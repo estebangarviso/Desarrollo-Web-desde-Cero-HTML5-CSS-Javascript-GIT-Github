@@ -24,12 +24,14 @@ git clone --branch clase2 https://github.com/estebangarviso/Desarrollo-Web-desde
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/estebangarviso/Desarrollo-Web-desde-Cero-HTML5-CSS-Javascript-GIT-Github/clase2?style=plastic)
 ## Características
 
-### Habilidades
+### Habilidades a demostrar
 
-![HTML5](https://img.shields.io/badge/HTML5-passing-E34F26?style=social&logo=html5)![CSS3](https://img.shields.io/badge/CSS3-passing-1572B6?style=social&logo=css3)
-### Framework
+![HTML5](https://img.shields.io/badge/HTML-v.5.0.0-E34F26?style=solid&labelColor=ffffff&logo=html5)
 
-![Bootstrap](https://img.shields.io/badge/Framework-Bootstrap-7952B3?style=social&logo=bootstrap)
+![CSS3](https://img.shields.io/badge/CSS-v3.0.0-1572B6?style=solid&labelColor=ffffff&logo=css3)
+### Frameworks Utilizados
+
+![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.0.0-7952B3?style=solid&labelColor=ffffff&logo=bootstrap)
 
 ### Contribuciones
 
