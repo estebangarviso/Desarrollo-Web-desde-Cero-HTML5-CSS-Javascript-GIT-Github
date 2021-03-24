@@ -21,7 +21,7 @@ git clone --branch clase2 https://github.com/estebangarviso/Desarrollo-Web-desde
   - Dirijase a la carpeta clonada y abra index.html en su navegador.
 ### Estado del repositorio
 
-![GitHub branch checks state](https://img.shields.io/github/checks-status/estebangarviso/Desarrollo-Web-desde-Cero-HTML5-CSS-Javascript-GIT-Github/clase2?style=plastic)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/estebangarviso/WebDeveloper/clase2?style=plastic)
 
 ## Características
 ### Habilidades a demostrar
