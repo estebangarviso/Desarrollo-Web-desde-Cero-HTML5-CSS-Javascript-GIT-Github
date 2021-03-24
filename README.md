@@ -2,7 +2,7 @@
 A continuación se procede a realizar un ejercicio relacionado con Flex de HTML5 y CSS3.
 
 *Ejemplo:*
-![Ejemplo](https://github.com/estebangarviso/Desarrollo-Web-desde-Cero-HTML5-CSS-Javascript-GIT-Github/blob/clase2/screen-task-clase-2.jpg?raw=true)
+![Ejemplo](https://github.com/estebangarviso/Desarrollo-Web-desde-Cero-HTML5-CSS-Javascript-GIT-Github/blob/clase2/assets/img/screen-task-clase-2.jpg?raw=true)
 
 ## Instalación
 1. **Manual**
