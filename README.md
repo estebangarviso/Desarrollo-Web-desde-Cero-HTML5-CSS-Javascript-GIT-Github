@@ -2,7 +2,7 @@
 A continuación se procede a realizar un ejercicio relacionado con Flex de HTML5 y CSS3.
 
 *Ejemplo:*
-![Ejemplo](https://github.com/estebangarviso/WebDeveloper/blob/clase2/assets/img/screen-task-clase-2.jpg?raw=true)
+![Ejemplo](https://github.com/estebangarviso/WebDeveloper/blob/v1.0.0/clase2/assets/img/screen-task-clase-2.jpg?raw=true)
 
 ## Instalación
 1. **Manual**
@@ -21,7 +21,7 @@ git clone --branch <version> https://github.com/estebangarviso/WebDeveloper
   - Dirijase a la carpeta clonada y abra index.html en su navegador.
 ### Estado del repositorio
 
-![GitHub branch checks state](https://img.shields.io/github/checks-status/estebangarviso/WebDeveloper/clase2?style=plastic)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/estebangarviso/WebDeveloper/v1.0.0?style=plastic)
 
 ## Características
 ### Habilidades a demostrar
