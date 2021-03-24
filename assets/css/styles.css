@@ -1,0 +1,92 @@
+/* General Settings - start */
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.3em;
+    background: #f4f4f4;
+}
+h1,h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+/* General Settings - end */
+/* Setup Header - start */
+#header-container .logo{
+    text-align: center;
+}
+#header #escalab_logo {
+    width: 150px;
+}
+#logo-curso{
+    position: absolute;
+    top:15px;
+}
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+#header {
+    background: #1c1c1c;
+}
+.header-top {
+    padding-top: 0.5714285714rem;
+    padding-bottom: 0.5714285714rem;
+    color: #fff;
+}
+#header .container{
+    max-width: 100%;
+}
+#header-container .col-header-center {
+    padding-right: .5rem;
+}
+#header-container .col-header-right {
+    padding-left: .5rem;
+}
+/* Setup Header - end */
+/* Setup Main Section - start */
+.container {
+    width: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#main .modules{
+    margin: 0 1.5rem;
+}
+#main .module{
+    color: #fff;
+    height: 260px;
+}
+.module .module-content{
+    height: 100%;
+    border-radius: 15px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+#main .soft-green {
+    background: #50e3c1;
+}
+#main .soft-black {
+    background: #4a4a4a;
+}
+#main .soft-blue {
+    background: #3fa7f4;
+}
+#main .soft-grey {
+    background: #cfbdf7;
+}
+/* Setup Main Section - end */
