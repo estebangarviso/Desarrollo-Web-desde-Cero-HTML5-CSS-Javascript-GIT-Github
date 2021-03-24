@@ -26,12 +26,12 @@ git clone --branch <version> https://github.com/estebangarviso/WebDeveloper
 ## Características
 ### Habilidades a demostrar
 
-![HTML5](https://img.shields.io/badge/HTML-v.5.0.0-E34F26?style=solid&labelColor=ffffff&logo=html5)
-![CSS3](https://img.shields.io/badge/CSS-v3.0.0-1572B6?style=solid&labelColor=ffffff&logo=css3)
+![HTML5](https://img.shields.io/badge/HTML-v.5.0.0-E34F26?style=solid&logoColor=ffffff&labelColor=E34F26&logo=html5)
+![CSS3](https://img.shields.io/badge/CSS-v3.0.0-1572B6?style=solid&labelColor=1572B6&logo=css3)
 
 ### Frameworks Utilizados
 
-![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.0.0-7952B3?style=solid&labelColor=ffffff&logo=bootstrap)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.0.0-7952B3?style=solid&logoColor=ffffff&labelColor=7952B3&logo=bootstrap)
 
 ### Contribuciones
 
