@@ -24,7 +24,7 @@ git clone --branch <version> https://github.com/estebangarviso/WebDeveloper
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/estebangarviso/WebDeveloper/v1.0.0?style=plastic)
 
 ## Características
-![Responsive](https://img.shields.io/badge/Responsive-v3.0.0-4F0599?style=solid&labelColor=4F0599&logo=Scaleway)
+![Responsive](https://img.shields.io/badge/Responsive--4F0599?style=solid&labelColor=4F0599&logo=Scaleway)
 ### Habilidades a demostrar
 
 ![HTML5](https://img.shields.io/badge/HTML-v.5.0.0-E34F26?style=solid&logoColor=ffffff&labelColor=E34F26&logo=html5)
