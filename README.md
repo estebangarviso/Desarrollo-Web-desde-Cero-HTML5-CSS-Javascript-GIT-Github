@@ -26,7 +26,7 @@ git clone --branch <version> https://github.com/estebangarviso/WebDeveloper
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-v4.6.0-7952B3?style=solid&logoColor=ffffff&labelColor=7952B3&logo=bootstrap)
 ![Javascript](https://img.shields.io/badge/Javascript-ES9-F7DF1E?style=solid&labelColor=F7DF1E&logoColor=000000&logo=JavaScript)
 ![Git](https://img.shields.io/badge/Git-2.31.0-F05032?style=solid&labelColor=F05032&logoColor=ffffff&logo=Git)
-![Github](https://img.shields.io/badge/Github-2.31.0-181717?style=solid&labelColor=181717&logoColor=ffffff&logo=GitGub)
+![Github](https://img.shields.io/badge/Github-2.31.0-181717?style=solid&labelColor=181717&logoColor=ffffff&logo=GitHub)
 
 ### Contributions 🖇️
 
