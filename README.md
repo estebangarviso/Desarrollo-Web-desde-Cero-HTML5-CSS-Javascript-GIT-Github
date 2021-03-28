@@ -1,3 +1,5 @@
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/estebangarviso/WebDeveloper)
+![Lines of code](https://img.shields.io/tokei/lines/github/estebangarviso/WebDeveloper)
 # Web Development from zero HTML5, CSS, Javascript & GIT/Github 🚀
 This is the 1st course that belongs to the Escalab Academy's FULL STACK DEVELOPER NINJA MASTER ROUTE 3 course (2021's 2nd Gen).
 
