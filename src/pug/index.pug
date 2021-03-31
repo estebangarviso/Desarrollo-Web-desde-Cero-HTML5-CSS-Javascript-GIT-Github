@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Freelancer - Start Bootstrap Theme
+        title Web Developer | Esteban Garviso
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
@@ -17,18 +17,20 @@ html(lang='en')
         script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic', rel='stylesheet', type='text/css')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
-
+        // Global site tag (gtag.js) - Google Analytics
+        script(src='https://www.googletagmanager.com/gtag/js?id=G-1WHVSSV0LY', crossorigin='anonymous')
+        script window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'G-1WHVSSV0LY');
     body#page-top
 
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
+                a.navbar-brand.js-scroll-trigger(href='#page-top') Esteban Garviso
                 button.navbar-toggler.navbar-toggler-right.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu 
                     i.fas.fa-bars
@@ -45,9 +47,9 @@ html(lang='en')
         header.masthead.bg-primary.text-white.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='...')
+                img.masthead-avatar.mb-5.rounded-circle(src='https://github.com/estebangarviso.png', alt='...')
                 // Masthead Heading
-                h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
+                h1.masthead-heading.text-uppercase.mb-0 Esteban Garviso
                 // Icon Divider
                 .divider-custom.divider-light
                     .divider-custom-line
@@ -55,7 +57,7 @@ html(lang='en')
                         i.fas.fa-star
                     .divider-custom-line
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Graphic Artist - Web Designer - Illustrator
+                p.masthead-subheading.font-weight-light.mb-0 Web Developer Site
 
         // Portfolio Section
         section#portfolio.page-section.portfolio
@@ -76,42 +78,14 @@ html(lang='en')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/task1.png', alt='...')
                     // Portfolio Item 2
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal2')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
-                    // Portfolio Item 3
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal3')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
-                    // Portfolio Item 4
-                    .col-md-6.col-lg-4.mb-5.mb-lg-0
-                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal4')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
-                    // Portfolio Item 5
-                    .col-md-6.col-lg-4.mb-5.mb-md-0
-                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal5')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
-                    // Portfolio Item 6
-                    .col-md-6.col-lg-4
-                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal6')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/task2.png', alt='...')
 
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
@@ -128,13 +102,13 @@ html(lang='en')
                 .row
                     .col-lg-4.ml-auto
                         p.lead
-                            | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+                            | This landing page is based in Freelance Theme by <a style="color:inherit;" href="https://github.com/StartBootstrap" target="_blank" rel="noopener noreferrer">Start Boostrap</a> and was customize by Esteban Garviso. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
                     .col-lg-4.mr-auto
                         p.lead
                             | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
                 // About Section Button
                 .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
+                    a.btn.btn-xl.btn-outline-light(href='https://github.com/estebangarviso/WebDeveloper/archive/refs/heads/main.zip')
                         i.fas.fa-download.mr-2
                         | Free Download!
 
@@ -187,32 +161,29 @@ html(lang='en')
                     .col-lg-4.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Location
                         p.lead.mb-0
-                            | 2215 John Daniel Drive
+                            | Viña del Mar, Valparaíso
                             br
-                            | Clark, MO 65243
+                            | Chile
                     // Footer Social Icons
                     .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        h4.text-uppercase.mb-4 Social Media
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://www.facebook.com/esteban.garviso')
                             i.fab.fa-fw.fa-facebook-f
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://twitter.com/estebangarviso')
                             i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://www.linkedin.com/in/esteban-hernan-a-garviso-venegas-0ba432110/')
                             i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-dribbble
                     // Footer About Text
                     .col-lg-4
-                        h4.text-uppercase.mb-4 About Freelancer
+                        h4.text-uppercase.mb-4 Follow me
                         p.lead.mb-0
-                            | Freelance is a free to use, MIT licensed Bootstrap theme created by 
-                            a(href='http://startbootstrap.com') Start Bootstrap
-                            | .
+                            a.github-button(href='https://github.com/estebangarviso' data-color-scheme='no-preference: dark; light: dark; dark: light;' data-size='large' data-show-count='true' aria-label='Follow @estebangarviso on GitHub')
+                                | Follow @estebangarviso
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
                 small
-                    | Copyright &copy; Your Website
+                    | Copyright &copy; Esteban Garviso
                     // This script automatically adds the current year to your website footer
                     // (credit: https://updateyourfooter.com/)
                     script.
@@ -237,7 +208,7 @@ html(lang='en')
                             .row.justify-content-center
                                 .col-lg-8
                                     // Portfolio Modal - Title
-                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal1Label Log Cabin
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal1Label Task 1 Class 3
                                     // Icon Divider
                                     .divider-custom
                                         .divider-custom-line
@@ -245,13 +216,13 @@ html(lang='en')
                                             i.fas.fa-star
                                         .divider-custom-line
                                     // Portfolio Modal - Image
-                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/cabin.png', alt='...')
+                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/task1.png', alt='...')
                                     // Portfolio Modal - Text
                                     p.mb-5
-                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                                    button.btn.btn-primary(data-dismiss='modal')
-                                        i.fas.fa-times.fa-fw
-                                        | Close Window
+                                        | Exercise related to Flex of HTML5 and CSS3. A plus is added with reboot, grid and main boostrap stylesheets.
+                                    a.btn.btn-primary(href='https://estebangarviso.github.io/WebDeveloper/task1/')
+                                        i.fas.fa-eye.fa-fw
+                                        | View
         // Portfolio Modal 2
         #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal2Label', aria-hidden='true')
             .modal-dialog.modal-xl(role='document')
@@ -264,7 +235,7 @@ html(lang='en')
                             .row.justify-content-center
                                 .col-lg-8
                                     // Portfolio Modal - Title
-                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal2Label Tasty Cake
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal2Label Task 2 Class 5
                                     // Icon Divider
                                     .divider-custom
                                         .divider-custom-line
@@ -272,13 +243,13 @@ html(lang='en')
                                             i.fas.fa-star
                                         .divider-custom-line
                                     // Portfolio Modal - Image
-                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/cake.png', alt='...')
+                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/task2.png', alt='...')
                                     // Portfolio Modal - Text
                                     p.mb-5
-                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                                    button.btn.btn-primary(data-dismiss='modal')
-                                        i.fas.fa-times.fa-fw
-                                        | Close Window
+                                        | Now I show how to build box structures of the layout applying html and css. Obvioly using reboot, grid and main boostrap stylesheets.
+                                    a.btn.btn-primary(href='https://estebangarviso.github.io/WebDeveloper/task2/')
+                                        i.fas.fa-eye.fa-fw
+                                        | View
         // Portfolio Modal 3
         #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal3Label', aria-hidden='true')
             .modal-dialog.modal-xl(role='document')
@@ -387,7 +358,8 @@ html(lang='en')
                                     button.btn.btn-primary(data-dismiss='modal')
                                         i.fas.fa-times.fa-fw
                                         | Close Window
-
+        // Github Buttons
+        script(async defer src="https://buttons.github.io/buttons.js")
         // Bootstrap core JS
         script(src='https://code.jquery.com/jquery-3.5.1.min.js')
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js')
