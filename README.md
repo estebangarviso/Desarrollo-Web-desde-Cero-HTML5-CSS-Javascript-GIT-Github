@@ -33,7 +33,7 @@ git clone --branch <version> https://github.com/estebangarviso/WebDeveloper
 #### Extra
 ##### Based on Freelancer by StartBootstrap
 ![NPM](https://img.shields.io/badge/npm-v6.14.11-CB3837?style=solid&labelColor=CB3837&logoColor=ffffff&logo=NPM)
-![Sass](https://img.shields.io/badge/Sass-v6.14.11-CB3837?style=solid&labelColor=CB3837&logoColor=ffffff&logo=Sass)
+![Sass](https://img.shields.io/badge/Sass-v6.14.11-CC6699?style=solid&labelColor=CC6699&logoColor=ffffff&logo=Sass)
 
 ### Contributions 🖇️
 
