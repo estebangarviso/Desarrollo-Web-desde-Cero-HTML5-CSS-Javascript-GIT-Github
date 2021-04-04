@@ -27,14 +27,14 @@ h1, h2 {
 }
 #header #logo-curso {
     position: absolute;
+    z-index: 1;
 }
 
 #header {
     background: #1c1c1c;
 }
 .header-top {
-    padding-top: 0.5714285714rem;
-    padding-bottom: 0.5714285714rem;
+    padding: 0.6rem 0;
     color: #fff;
 }
 #header .container {
@@ -45,9 +45,14 @@ h1, h2 {
 #wrapper {
     width: 100%;
     background-color: #ededed;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
     min-height: 100vh;
 }
+#main-gutters{
+    border-style: solid;
+    border-color: turquoise;
+}
+
 #module-list {
     max-width: 1200px;
 }
@@ -121,16 +126,64 @@ h1, h2 {
 }
 /* Animations */
 .floating {  
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-name: floating;  
+            animation-name: floating;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     margin-left: 30px;
     margin-top: 5px;
+}
+  
+@-webkit-keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
 }
   
 @keyframes floating {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }    
+}
+/* Carousel */
+.section-stretched {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+}
+#carousel-home .carousel-indicators button {
+    height: .5em;
+    width: .5em;
+    border-radius: 50%;
+    border: 2px solid rgb(160, 0, 0);
+    background-color: rgb(255, 48, 96);
+}
+
+/* Navbar */
+.col-header-right .navbar .navbar-toggler {
+    color: #fff;
+    border-color: transparent;
+    background-color: rgb(255, 48, 96);
+}
+#navbar-menu-toggler.collapsing {
+    transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+}
+#navbar-menu-toggler {
+    background-color: #1c1c1c;
+}
+
+@media (max-width: 767.98px) {
+    #navbar-menu-toggler {
+        top: 100%;
+        right: 0;
+        position: absolute;
+        min-width: 240px;
+        z-index: 1000;
+        padding: 1rem;
+    }
 }
