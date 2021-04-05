@@ -10,13 +10,16 @@ h1, h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
-
-#content .main-title {
-    font-size: 45px;
-    margin-bottom: 2rem;
-    font-weight: 300;
-    text-align: center;
-    line-height: initial;
+.btn {
+    border-radius: 30px;
+}
+.btn-primary{
+    background-color: #ff3060;
+    border-color: #ff3060;
+}
+.btn-primary:hover{
+    background-color: #d82751;
+    border-color: #d82751;
 }
 /* Header */
 #header-container .logo{
@@ -33,6 +36,7 @@ h1, h2 {
 #header {
     background: #1c1c1c;
 }
+
 .header-top {
     padding: 0.6rem 0;
     color: #fff;
@@ -161,14 +165,14 @@ h1, h2 {
     width: .5em;
     border-radius: 50%;
     border: 2px solid rgb(160, 0, 0);
-    background-color: rgb(255, 48, 96);
+    background-color: #ff3060;
 }
 
 /* Navbar */
 .col-header-right .navbar .navbar-toggler {
     color: #fff;
     border-color: transparent;
-    background-color: rgb(255, 48, 96);
+    background-color: #ff3060;
 }
 #navbar-menu-toggler.collapsing {
     transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
