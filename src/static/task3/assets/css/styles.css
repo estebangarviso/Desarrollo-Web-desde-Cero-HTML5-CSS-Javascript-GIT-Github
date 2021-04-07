@@ -1,0 +1,128 @@
+/* General Settings */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.3em;
+}
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+/* Header */
+.header-top{
+    padding: 0.625rem 0;
+}
+#header-container .col-header-center {
+    padding-right: .5rem;
+}
+
+#desktop_logo svg{
+    padding-right: 2.5rem;
+    width: 200px;
+}
+#mobile-header .col-mobile-logo{
+    padding: .625rem 0;
+}
+#mobile-header .col-mobile-logo svg{
+    width: 200px;
+}
+
+#desktop_logo #desktop-course-logo {
+    position: absolute;
+    z-index: 1;
+}
+
+#header {
+    background: #1c1c1c;
+}
+
+.header-top {
+    padding: 0.6rem 0;
+    color: #fff;
+}
+#header .container {
+    max-width: 100%;
+}
+#mobile-header {
+    display: none;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+@media (max-width: 767.98px) {
+    #mobile-header {
+        display: block;
+    }
+    .sticky-desktop-wrapper{
+        display:    none;
+    }
+    #desktop-header {
+        display:    none;
+    }
+}
+/* Navbar */
+#header .navbar .navbar-toggler {
+    color: #fff;
+    background-color: #ff3060;
+}
+#header .navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 .25rem #b8304f;
+}
+#mobile-header .navbar{
+    padding: 0;
+}
+#mobile-header .navbar-toggler{
+    border-radius: .8rem 8rem 0 0;
+}
+/* Main Section */
+#wrapper {
+    width: 100%;
+    background-color: #ededed;
+    padding: 0 1rem 1rem;
+    min-height: 100vh;
+}
+#photo-catalogue .card{
+    box-shadow: .3rem .3rem .16rem .1rem;
+}
+#photo-catalogue .row > [class*="col-"] {
+    padding: 0.3571428571rem;
+}
+/* Footer */
+#footer{
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 1rem 0;
+}
+/* Footer Copyright */
+#footer .copyright-txt{
+    text-align: center;
+}
+
+/* Animations */
+.floating {  
+    -webkit-animation-name: floating;  
+            animation-name: floating;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+  
+@-webkit-keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}

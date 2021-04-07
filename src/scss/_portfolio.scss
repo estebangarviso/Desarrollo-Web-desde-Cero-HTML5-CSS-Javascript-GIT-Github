@@ -29,6 +29,12 @@
 
 // Styling for the portfolio modals
 .portfolio-modal {
+    .carousel{
+        .carousel-item img{
+            border-radius: $border-radius;
+        }
+    }
+
     .portfolio-modal-title {
         font-size: 2.25rem;
         line-height: 2rem;

@@ -10191,6 +10191,9 @@ h3 {
   font-size: 1.5rem;
 }
 
+.portfolio-modal .carousel .carousel-item img {
+  border-radius: 1.875rem;
+}
 .portfolio-modal .portfolio-modal-title {
   font-size: 2.25rem;
   line-height: 2rem;

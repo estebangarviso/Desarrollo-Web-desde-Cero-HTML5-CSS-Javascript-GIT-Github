@@ -19,14 +19,18 @@ html(lang='en')
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic', rel='stylesheet', type='text/css')
-
+        // Global site tag (gtag.js) - Google Analytics
+        script(src='https://www.googletagmanager.com/gtag/js?id=UA-193953522-1', crossorigin='anonymous')
+        script
+            include ../js/googleanalytics.js
+        // Google Tag Manager 
+        script
+            include ../js/googletag.js
+        // End Google Tag Manager
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
-        // Global site tag (gtag.js) - Google Analytics
-        script(src='https://www.googletagmanager.com/gtag/js?id=G-1WHVSSV0LY', crossorigin='anonymous')
-        script window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'G-1WHVSSV0LY');
     body#page-top
-
+        
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
@@ -77,15 +81,22 @@ html(lang='en')
                         .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal1')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/task1.png', alt='...')
+                                    i.fas.fa-eye.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/task1.png', alt='Task 1 Web Developer Escalab Academy')
                     // Portfolio Item 2
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal2')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/task2.png', alt='...')
+                                    i.fas.fa-eye.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/task2.png', alt='Task 2 Web Developer Escalab Academy')
+                    // Portfolio Item 3
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal3')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-eye.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/task3.png', alt='Task 3 Web Developer Escalab Academy')
 
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
@@ -208,18 +219,29 @@ html(lang='en')
                             .row.justify-content-center
                                 .col-lg-8
                                     // Portfolio Modal - Title
-                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal1Label Task 1 Class 3
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal1Label Task 1 Class 2
                                     // Icon Divider
                                     .divider-custom
                                         .divider-custom-line
                                         .divider-custom-icon
                                             i.fas.fa-star
                                         .divider-custom-line
-                                    // Portfolio Modal - Image
-                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/task1.png', alt='...')
+                                    // Portfolio Modal - Carrousel Cross fade
+                                    #modal-carousel-task1.carousel.mb-3.slide.carousel-fade(data-ride='carousel')
+                                        .carousel-inner
+                                            .carousel-item.active
+                                                img.d-block.w-100(src='assets/img/portfolio/task1.png' alt='Task 1 Escalab Academy Desktop Version')
+                                            .carousel-item
+                                                img.d-block.w-100(src='assets/img/portfolio/task1-mobile.png' alt='Task 1 Escalab Academy Mobile Version')
+                                        a.carousel-control-prev(href='#modal-carousel-task1' role='button' data-slide='prev')
+                                            i.fa.fa-2x.fa-chevron-left(aria-hidden='true')
+                                            span.sr-only Previous
+                                        a.carousel-control-next(href='#modal-carousel-task1' role='button' data-slide='next')
+                                            i.fa.fa-2x.fa-chevron-right(aria-hidden='true')
+                                            span.sr-only Next
                                     // Portfolio Modal - Text
                                     p.mb-5
-                                        | Exercise related to Flex of HTML5 and CSS3. A plus is added with reboot, grid and main boostrap stylesheets.
+                                        | Exercise related to Flex of HTML5 and CSS3. A plus is added with reboot, grid and main bootstrap stylesheets.
                                     a.btn.btn-primary(href='https://estebangarviso.github.io/WebDeveloper/static/task1/')
                                         i.fas.fa-eye.fa-fw
                                         | View
@@ -235,18 +257,29 @@ html(lang='en')
                             .row.justify-content-center
                                 .col-lg-8
                                     // Portfolio Modal - Title
-                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal2Label Task 2 Class 5
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal2Label Task 2 Class 3
                                     // Icon Divider
                                     .divider-custom
                                         .divider-custom-line
                                         .divider-custom-icon
                                             i.fas.fa-star
                                         .divider-custom-line
-                                    // Portfolio Modal - Image
-                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/task2.png', alt='...')
+                                    // Portfolio Modal - Carrousel Cross fade
+                                    #modal-carousel-task2.carousel.mb-3.slide.carousel-fade(data-ride='carousel')
+                                        .carousel-inner
+                                            .carousel-item.active
+                                                img.d-block.w-100(src='assets/img/portfolio/task2.png' alt='Task 2 Escalab Academy Desktop Version')
+                                            .carousel-item
+                                                img.d-block.w-100(src='assets/img/portfolio/task2-mobile.png' alt='Task 2 Escalab Academy Mobile Version')
+                                        a.carousel-control-prev(href='#modal-carousel-task2' role='button' data-slide='prev')
+                                            i.fa.fa-2x.fa-chevron-left(aria-hidden='true')
+                                            span.sr-only Previous
+                                        a.carousel-control-next(href='#modal-carousel-task2' role='button' data-slide='next')
+                                            i.fa.fa-2x.fa-chevron-right(aria-hidden='true')
+                                            span.sr-only Next
                                     // Portfolio Modal - Text
                                     p.mb-5
-                                        | Now I show how to build box structures of the layout applying html and css. Obvioly using reboot, grid and main boostrap stylesheets.
+                                        | Now I show how to build box structures of the layout applying html and css. Obvioly using reboot, grid and main bootstrap stylesheets.
                                     a.btn.btn-primary(href='https://estebangarviso.github.io/WebDeveloper/static/task2/')
                                         i.fas.fa-eye.fa-fw
                                         | View
@@ -269,89 +302,19 @@ html(lang='en')
                                         .divider-custom-icon
                                             i.fas.fa-star
                                         .divider-custom-line
-                                    // Portfolio Modal - Image
-                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/circus.png', alt='...')
-                                    // Portfolio Modal - Text
-                                    p.mb-5
-                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                                    button.btn.btn-primary(data-dismiss='modal')
-                                        i.fas.fa-times.fa-fw
-                                        | Close Window
-        // Portfolio Modal 4
-        #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal4Label', aria-hidden='true')
-            .modal-dialog.modal-xl(role='document')
-                .modal-content
-                    button.close(type='button', data-dismiss='modal', aria-label='Close')
-                        span(aria-hidden='true')
-                            i.fas.fa-times
-                    .modal-body.text-center
-                        .container
-                            .row.justify-content-center
-                                .col-lg-8
-                                    // Portfolio Modal - Title
-                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal4Label Controller
-                                    // Icon Divider
-                                    .divider-custom
-                                        .divider-custom-line
-                                        .divider-custom-icon
-                                            i.fas.fa-star
-                                        .divider-custom-line
-                                    // Portfolio Modal - Image
-                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/game.png', alt='...')
-                                    // Portfolio Modal - Text
-                                    p.mb-5
-                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                                    button.btn.btn-primary(data-dismiss='modal')
-                                        i.fas.fa-times.fa-fw
-                                        | Close Window
-        // Portfolio Modal 5
-        #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal5Label', aria-hidden='true')
-            .modal-dialog.modal-xl(role='document')
-                .modal-content
-                    button.close(type='button', data-dismiss='modal', aria-label='Close')
-                        span(aria-hidden='true')
-                            i.fas.fa-times
-                    .modal-body.text-center
-                        .container
-                            .row.justify-content-center
-                                .col-lg-8
-                                    // Portfolio Modal - Title
-                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal5Label Locked Safe
-                                    // Icon Divider
-                                    .divider-custom
-                                        .divider-custom-line
-                                        .divider-custom-icon
-                                            i.fas.fa-star
-                                        .divider-custom-line
-                                    // Portfolio Modal - Image
-                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/safe.png', alt='...')
-                                    // Portfolio Modal - Text
-                                    p.mb-5
-                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                                    button.btn.btn-primary(data-dismiss='modal')
-                                        i.fas.fa-times.fa-fw
-                                        | Close Window
-        // Portfolio Modal 6
-        #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal6Label', aria-hidden='true')
-            .modal-dialog.modal-xl(role='document')
-                .modal-content
-                    button.close(type='button', data-dismiss='modal', aria-label='Close')
-                        span(aria-hidden='true')
-                            i.fas.fa-times
-                    .modal-body.text-center
-                        .container
-                            .row.justify-content-center
-                                .col-lg-8
-                                    // Portfolio Modal - Title
-                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal6Label Submarine
-                                    // Icon Divider
-                                    .divider-custom
-                                        .divider-custom-line
-                                        .divider-custom-icon
-                                            i.fas.fa-star
-                                        .divider-custom-line
-                                    // Portfolio Modal - Image
-                                    img.img-fluid.rounded.mb-5(src='assets/img/portfolio/submarine.png', alt='...')
+                                    // Portfolio Modal - Carrousel Cross fade
+                                    #modal-carousel-task3.carousel.mb-3.slide.carousel-fade(data-ride='carousel')
+                                        .carousel-inner
+                                            .carousel-item.active
+                                                img.d-block.w-100(src='assets/img/portfolio/task3.png' alt='Task 3  Escalab Academy Desktop Version')
+                                            .carousel-item
+                                                img.d-block.w-100(src='assets/img/portfolio/task3-mobile.png' alt='Task 3  Escalab Academy Mobile Version')
+                                        a.carousel-control-prev(href='#modal-carousel-task3' role='button' data-slide='prev')
+                                            i.fa.fa-2x.fa-chevron-left(aria-hidden='true')
+                                            span.sr-only Previous
+                                        a.carousel-control-next(href='#modal-carousel-task3' role='button' data-slide='next')
+                                            i.fa.fa-2x.fa-chevron-right(aria-hidden='true')
+                                            span.sr-only Next
                                     // Portfolio Modal - Text
                                     p.mb-5
                                         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
