@@ -84,11 +84,23 @@ h1, h2 {
     padding: 0 1rem 1rem;
     min-height: 100vh;
 }
+/* Añadir sombra a todas las cards */
 #photo-catalogue .card{
     box-shadow: .3rem .3rem .16rem .1rem;
 }
+/* Aplicar estilos en dispositivos de escritorio */
+@media (min-width: 767.98px){
+    /* Intercala flex inversa de filas */
+    #photo-catalogue .photo-catalogue-item:nth-child(odd){
+        flex-direction: row-reverse;  
+    }
+    /* Intercalar sombra interna por item en catálogo */
+    #photo-catalogue .photo-catalogue-item:nth-child(odd) .card{
+        box-shadow: .3rem .3rem .16rem .1rem inset;
+    }
+}
 #photo-catalogue .row > [class*="col-"] {
-    padding: 0.3571428571rem;
+    padding: 0.357rem;
 }
 /* Footer */
 #footer{
