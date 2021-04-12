@@ -48,6 +48,13 @@
                 font-size: 5em;
             }
         }
+        .fa-git-alt{
+            color: #F05032;
+            font-size: 3em;
+            @include media-breakpoint-up(lg) {
+                font-size: 5em;
+            }
+        }
     }
 
     &.divider-light {

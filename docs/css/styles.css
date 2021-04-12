@@ -10110,6 +10110,15 @@ h3 {
     font-size: 5em;
   }
 }
+.divider-custom .divider-custom-icon .fa-git-alt {
+  color: #F05032;
+  font-size: 3em;
+}
+@media (min-width: 992px) {
+  .divider-custom .divider-custom-icon .fa-git-alt {
+    font-size: 5em;
+  }
+}
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
 }
