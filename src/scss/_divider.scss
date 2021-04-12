@@ -26,6 +26,28 @@
     .divider-custom-icon {
         color: $secondary !important;
         font-size: 2rem;
+        
+        .fa-html5{
+            color: #E34F26;
+            font-size: 3em;
+            @include media-breakpoint-up(lg) {
+                font-size: 5em;
+            }
+        }
+        .fa-css3-alt{
+            color: #1572B6;
+            font-size: 3em;
+            @include media-breakpoint-up(lg) {
+                font-size: 5em;
+            }
+        }
+        .fa-js-square{
+            color: #F7DF1E;
+            font-size: 3em;
+            @include media-breakpoint-up(lg) {
+                font-size: 5em;
+            }
+        }
     }
 
     &.divider-light {

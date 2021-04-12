@@ -48,7 +48,7 @@ html(lang='en')
                             a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#contact') Contact
 
         // Masthead
-        header.masthead.bg-primary.text-white.text-center
+        header.masthead.bg-secondary.text-white.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
                 img.masthead-avatar.mb-5.rounded-circle(src='https://github.com/estebangarviso.png', alt='...')
@@ -56,12 +56,12 @@ html(lang='en')
                 h1.masthead-heading.text-uppercase.mb-0 Esteban Garviso
                 // Icon Divider
                 .divider-custom.divider-light
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
+                    .divider-custom-icon.floating
+                        i.fab.fa-html5
+                        i.fab.fa-css3-alt
+                        i.fab.fa-js-square
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Web Developer Site
+                p.masthead-subheading.font-weight-light.mb-0 Web Development from Zero
 
         // Portfolio Section
         section#portfolio.page-section.portfolio
@@ -113,7 +113,8 @@ html(lang='en')
                 .row
                     .col-lg-12.mx-auto
                         p.lead
-                            | Here you can watch all my progress doing tasks and proyects in web developement for zero at <a style="color:inherit;" href="https://escalab.academy" target="_blank" rel="noopener noreferrer">Escalab Academy</a>. The following download includes the complete source files including HTML, CSS, and JavaScript and SASS stylesheets.
+                            | Here you can watch all my progress doing tasks and proyects in web developement for zero at <a style="color:inherit;" href="https://escalab.academy" target="_blank" rel="noopener noreferrer">Escalab Academy.</a> The following download includes the complete source files including HTML, CSS, and JavaScript and SASS stylesheets.<br />
+                        img.img-fluid.p-3.bg-secondary(src="assets/img/escalabacademy.svg", alt="Escalab Academy Logo")
                 // About Section Button
                 .text-center.mt-4
                     a.btn.btn-xl.btn-outline-light(href='https://github.com/estebangarviso/WebDeveloper/archive/refs/heads/main.zip')

@@ -10021,6 +10021,43 @@ h3 {
   }
 }
 
+/* Animations */
+.floating {
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
   width: 100%;
@@ -10045,6 +10082,33 @@ h3 {
 .divider-custom .divider-custom-icon {
   color: #1c1c1c !important;
   font-size: 2rem;
+}
+.divider-custom .divider-custom-icon .fa-html5 {
+  color: #E34F26;
+  font-size: 3em;
+}
+@media (min-width: 992px) {
+  .divider-custom .divider-custom-icon .fa-html5 {
+    font-size: 5em;
+  }
+}
+.divider-custom .divider-custom-icon .fa-css3-alt {
+  color: #1572B6;
+  font-size: 3em;
+}
+@media (min-width: 992px) {
+  .divider-custom .divider-custom-icon .fa-css3-alt {
+    font-size: 5em;
+  }
+}
+.divider-custom .divider-custom-icon .fa-js-square {
+  color: #F7DF1E;
+  font-size: 3em;
+}
+@media (min-width: 992px) {
+  .divider-custom .divider-custom-icon .fa-js-square {
+    font-size: 5em;
+  }
 }
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
